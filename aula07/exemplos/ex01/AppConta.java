@@ -148,45 +148,45 @@ public class AppConta {
         System.out.print("===> ");
     }
 
-    private static void depositar() {
-    }
+    // private static void depositar() {
+    // }
 
-    private static void sacar() {
-    }
+    // private static void sacar() {
+    // }
 
-    private static void verificarSaldo() {
-    }
+    // private static void verificarSaldo() {
+    // }
 
-    private static void encerrar() {
-    }
+    // private static void encerrar() {
+    // }
 
-    private static void nenhumaOpcao() {
-    }
+    // private static void nenhumaOpcao() {
+    // }
 
-    private static Conta criarConta(TipoConta tipo, int numConta) {
-        if (tipo == TipoConta.CONTA_CORRENTE) {
-            return new ContaCorrente(numConta);
-        }
-        if (tipo == TipoConta.CONTA_POUPANCA) {
-            return new ContaPoupanca(numConta);
-        }
-        if (tipo == TipoConta.CONTA_ESPECIAL) {
-            return new ContaEspecial(numConta, 0);
-        }
-        return null;
-    }
+    // private static Conta criarConta(TipoConta tipo, int numConta) {
+    //     if (tipo == TipoConta.CONTA_CORRENTE) {
+    //         return new ContaCorrente(numConta);
+    //     }
+    //     if (tipo == TipoConta.CONTA_POUPANCA) {
+    //         return new ContaPoupanca(numConta);
+    //     }
+    //     if (tipo == TipoConta.CONTA_ESPECIAL) {
+    //         return new ContaEspecial(numConta, 0);
+    //     }
+    //     return null;
+    // }
 
-    private static Conta criarConta(TipoConta tipo, int numConta, double limite) {
-        if (tipo == TipoConta.CONTA_CORRENTE) {
-            throw new IllegalArgumentException("Conta corrente não aceita limite como parâmetro");
-        }
-        if (tipo == TipoConta.CONTA_POUPANCA) {
-            throw new IllegalArgumentException("Conta poupança não aceita limite como parâmetro");
-        }
-        if (tipo == TipoConta.CONTA_ESPECIAL) {
-            return new ContaEspecial(numConta, limite);
-        }
-        return null;
-    }
+    // private static Conta criarConta(TipoConta tipo, int numConta, double limite) {
+    //     if (tipo == TipoConta.CONTA_CORRENTE) {
+    //         throw new IllegalArgumentException("Conta corrente não aceita limite como parâmetro");
+    //     }
+    //     if (tipo == TipoConta.CONTA_POUPANCA) {
+    //         throw new IllegalArgumentException("Conta poupança não aceita limite como parâmetro");
+    //     }
+    //     if (tipo == TipoConta.CONTA_ESPECIAL) {
+    //         return new ContaEspecial(numConta, limite);
+    //     }
+    //     return null;
+    // }
 
 }
