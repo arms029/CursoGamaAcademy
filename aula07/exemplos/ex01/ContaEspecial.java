@@ -1,4 +1,4 @@
-package ex03;
+package exemplos.ex01;
 
 public class ContaEspecial extends Conta {
     private double limite;

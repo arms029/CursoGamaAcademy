@@ -1,5 +1,4 @@
-package ex03;
-
+package exemplos.ex01;
 public abstract class Conta {
     private int numero;
     private double saldo;

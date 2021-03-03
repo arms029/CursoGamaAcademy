@@ -1,4 +1,4 @@
-package ex03;
+package exemplos.ex01;
 
 public class ContaCorrente extends Conta{
     private final double TAXA_DEPOSITO = 0.10d;

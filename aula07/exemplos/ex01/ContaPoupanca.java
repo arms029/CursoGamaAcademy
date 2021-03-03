@@ -1,4 +1,4 @@
-package ex03;
+package exemplos.ex01;
 
 public class ContaPoupanca extends Conta {
     private static double taxaSaque = 0; //atributo de classe

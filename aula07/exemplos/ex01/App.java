@@ -1,4 +1,4 @@
-package ex03;
+package exemplos.ex01;
 
 public class App {
     public static void main(String[] args) {
