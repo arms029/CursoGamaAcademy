@@ -11,7 +11,6 @@ public class AppConta {
         double limite;
         double valorDeposito;
         double valorSaque;
-        // Map<Integer, Conta> listaContas = new HashMap<>();
         ArrayList<Conta> arrayListContas = new ArrayList<>();
         GerenciaContas contas = new GerenciaContas();
 
@@ -25,7 +24,6 @@ public class AppConta {
                     System.out.println("digite o número da conta");
                     numeroConta = teclado.nextInt();
 
-                    // listaContas.put(numConta, new ContaCorrente(numConta));
                     contas.novaContaCorrente(numeroConta);
                     break;
                 case 2:
@@ -36,7 +34,6 @@ public class AppConta {
                     System.out.println("digite o limite da conta");
                     limite = teclado.nextDouble();
 
-                    // listaContas.put(numConta, new ContaEspecial(numConta, limite));
                     contas.novaContaEspecial(numeroConta, limite);
                     break;
                 case 3:
@@ -44,7 +41,6 @@ public class AppConta {
                     System.out.println("digite o número da conta");
                     numeroConta = teclado.nextInt();
 
-                    // listaContas.put(numConta, new ContaPoupanca(numConta));
                     contas.novaContaPoupanca(numeroConta);
                     break;
                 case 4:
@@ -55,7 +51,6 @@ public class AppConta {
                     System.out.println("digite o valor do depósito");
                     valorDeposito = teclado.nextDouble();
 
-                    // listaContas.get(numConta).deposita(valorDeposito);
                     contas.deposito(numeroConta, valorDeposito);
                     break;
                 case 5:
@@ -66,7 +61,6 @@ public class AppConta {
                     System.out.println("digite o valor do saque");
                     valorSaque = teclado.nextDouble();
 
-                    // listaContas.get(numConta).saque(valorSaque);
                     contas.saque(numeroConta, valorSaque);
                     break;
                 case 6:
@@ -74,7 +68,6 @@ public class AppConta {
                     System.out.println("digite o número da conta");
                     numeroConta = teclado.nextInt();
 
-                    // System.out.println(listaContas.get(numConta).getSaldo());
                     System.out.println(contas.exibirSaldo(numeroConta));
                     break;
                 case 7:
@@ -107,34 +100,5 @@ public class AppConta {
         System.out.println("99-Listar Contas");
         System.out.print("===> ");
     }
-
-    // private static Conta criarConta(TipoConta tipo, int numConta) {
-    // if (tipo == TipoConta.CONTA_CORRENTE) {
-    // return new ContaCorrente(numConta);
-    // }
-    // if (tipo == TipoConta.CONTA_POUPANCA) {
-    // return new ContaPoupanca(numConta);
-    // }
-    // if (tipo == TipoConta.CONTA_ESPECIAL) {
-    // return new ContaEspecial(numConta, 0);
-    // }
-    // return null;
-    // }
-
-    // private static Conta criarConta(TipoConta tipo, int numConta, double limite)
-    // {
-    // if (tipo == TipoConta.CONTA_CORRENTE) {
-    // throw new IllegalArgumentException("Conta corrente não aceita limite como
-    // parâmetro");
-    // }
-    // if (tipo == TipoConta.CONTA_POUPANCA) {
-    // throw new IllegalArgumentException("Conta poupança não aceita limite como
-    // parâmetro");
-    // }
-    // if (tipo == TipoConta.CONTA_ESPECIAL) {
-    // return new ContaEspecial(numConta, limite);
-    // }
-    // return null;
-    // }
 
 }
