@@ -17,8 +17,10 @@ public class ContaEspecial extends Conta {
     public boolean saque(double valor){
         if(valor <= getSaldo() + this.limite)
             return super.saque(valor);
-        else
+        else{
+            System.out.println("Saque negado! valor do limite + valor do saldo é menor que o valor de saque!");
             return false;
+        }
     }
 
     @Override
