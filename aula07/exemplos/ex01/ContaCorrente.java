@@ -17,10 +17,8 @@ public class ContaCorrente extends Conta{
     public boolean saque(double valor){
         if(valor <= getSaldo())
             return super.saque(valor);
-        else{
-            System.out.println("Saque negado! valor do saque é maior que o valor do saldo!");
+        else
             return false;
-        }
     }
 
     @Override

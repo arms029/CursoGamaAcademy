@@ -21,21 +21,17 @@ public abstract class Conta {
             this.saldo += valor;
             return true;
         }
-        else{
-            System.out.println("Depósito não permitido, digite um valor maior que ZERO! --- " + this.getClass());
+        else
             return false;
-        }
     }
 
     public boolean saque(double valor){
-        if (valor < 0){
-            System.out.println("Saque não permitido, digite um valor maior que ZERO! --- " + this.getClass());
+        if (valor < 0)
             return false;
-        }
+
         this.saldo -= valor;
         return true;
     }
-
 
     @Override
     public String toString() {

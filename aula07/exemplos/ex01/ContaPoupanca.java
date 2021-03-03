@@ -24,10 +24,8 @@ public class ContaPoupanca extends Conta {
     public boolean saque(double valor){
         if(valor + ContaPoupanca.taxaSaque <= getSaldo())
             return super.saque(valor + ContaPoupanca.taxaSaque);
-        else{
-            System.out.println("Saque negado! valor do saque + taxa de saque é maior que o valor do saldo!");
+        else
             return false;
-        }
     }
 
     @Override
