@@ -1,16 +1,26 @@
 package br.arms.spring02.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity //classe mapeada no BD
 @Table(name="usuario")
 public class Usuario {
 
+
+    public Usuario() {
+        super();
+    }
+    
     @Id //PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) //auto increment
     @Column(name="id") //nome da coluna
@@ -27,6 +37,10 @@ public class Usuario {
 
     @Column(name="senha", length = 20, nullable = false) 
     private String senha;
+
+    @OneToMany(mappedBy = "usuario")
+    @JsonIgnoreProperties("usuario")
+    private List<Compra> compras;
 
     public int getId() {
         return id;
@@ -68,6 +82,12 @@ public class Usuario {
         this.senha = senha;
     }
 
-    
+    public List<Compra> getCompras() {
+        return compras;
+    }
+
+    public void setCompras(List<Compra> compras) {
+        this.compras = compras;
+    }
 
 }

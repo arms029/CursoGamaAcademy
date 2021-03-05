@@ -6,5 +6,6 @@ import br.arms.spring02.model.Usuario;
 
 public interface UsuarioRepo extends CrudRepository<Usuario,Integer>{
     public Usuario findByEmailAndSenha(String email, String senha);
+    public Usuario findByEmailOrCpf(String email, String cpf);
 }
 

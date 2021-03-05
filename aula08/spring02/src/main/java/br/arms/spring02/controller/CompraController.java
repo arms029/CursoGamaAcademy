@@ -31,18 +31,16 @@ public class CompraController {
         return ResponseEntity.notFound().build();
     }
 
-
     @RequestMapping("/all")
     public ResponseEntity<List<Compra>> getCompraById(){
         List<Compra> compras = (List<Compra>) repo.findAll();
         return ResponseEntity.ok(compras); //OK = 200
     }
-//https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods
 
-
+    //https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods
     @RequestMapping("/all/min/{valor}")
     public ResponseEntity<List<Compra>> getAllComprasByValue(@PathVariable double valor){
-        List<Compra> compras = (List<Compra>) repo.findByValorGreaterThan(valor);
+        List<Compra> compras = (List<Compra>) repo.findByValorGreaterThanEqual(valor);
         return ResponseEntity.ok(compras); //OK = 200
     }
 
