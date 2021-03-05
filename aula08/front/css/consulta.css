@@ -1,0 +1,29 @@
+.btn-consultar{
+    margin-left: 50px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.btn-logout{
+    margin: 10px;
+    margin-left: 40px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background-color: red;
+    border: 1px solid  #550000;
+    color: white;
+}
+
+.btn-logout:hover{
+    background-color: #FF5500;
+}
+
+.tabela{
+    background-color: #DDD;
+}
+
+.tabela td{
+    padding: 15px;
+}
