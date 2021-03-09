@@ -1,0 +1,36 @@
+express --view=ejs validador_cpf
+
+cd validador_cpf/
+
+code .
+
+npm install
+
+npm start
+
+npm install --save-dev jest
+
+npx jest --init
+
+npm run test
+
+
+
+https://github.com/Didox/validar_cpf_tdd_bdd_turma-itau-15b
+
+git clone URL
+
+npm install --save-dev cypress
+
+npm run test-comportamento
+
+https://www.torneseumprogramador.com.br/busca?q=bdd
+https://www.torneseumprogramador.com.br/busca?q=bdd
+
+Build > TDD > BDD > Dev > QA > Prod
+
+START /B npm start 2>&1
+
+heroku git:remote -a dev-validador-15a
+
+git push heroku main
