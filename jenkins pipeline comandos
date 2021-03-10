@@ -29,6 +29,7 @@ https://www.torneseumprogramador.com.br/busca?q=bdd
 
 Build > TDD > BDD > Dev > QA > Prod
 
+//comando para criar terminal windowns em background
 START /B npm start 2>&1
 
 heroku git:remote -a dev-validador-15a
